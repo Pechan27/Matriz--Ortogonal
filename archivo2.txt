@@ -1,3 +1,4 @@
 prueba de archivos{
     imprimir 
+    otro imprimir
 }
