@@ -294,7 +294,7 @@ struct cabeceras{
 			
 			while(temporal!=NULL){
 				if(temporal->x == x){
-					cout<<"Cabecera numero "<<temporal->x<<" ya existe"endl;
+					cout<<"Cabecera numero "<<temporal->x<<" ya existe"<<endl;
 					return true;
 				}
 				else if(temporal->siguiente == NULL){
@@ -455,7 +455,7 @@ struct laterales{
 			while(temporal->y != y){
 				temporal = temporal->siguiente;
 			}
-			cout<<"retornando lateral "<<<<endl;
+			cout<<"retornando lateral "<<endl;
   		return temporal;
 		}
 		else{
