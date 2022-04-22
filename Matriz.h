@@ -21,7 +21,7 @@ struct nodoCentral{
 	}
 };
 
-
+//lista vertical 
 struct listaVertical{
 	nodoCentral* primero;
 	nodoCentral* ultimo;
@@ -100,8 +100,6 @@ struct listaVertical{
 		}
 	}
 };
-
-
 
 
 //lista horizontal
@@ -204,7 +202,7 @@ struct nodoCabecera{
 };
 
 
-
+//nodo de la cabeceras
 struct cabeceras{
 	nodoCabecera* primero;
 	nodoCabecera* ultimo;
@@ -315,7 +313,7 @@ struct cabeceras{
 			while(temporal->x != x){
 				temporal = temporal->siguiente;
 			}
-			cout<<"retornando"<<endl;
+			cout<<"retornando"<<temporal->x;
   		return temporal;
 		}
 		else{
@@ -324,9 +322,6 @@ struct cabeceras{
 		}
 	}
 };
-
-
-
 
 //nodos laterales
 struct nodoLaterales{
@@ -342,6 +337,7 @@ struct nodoLaterales{
 		anterior = NULL;
 	}
 };
+
 
 //lista laterales
 struct laterales{
@@ -425,7 +421,7 @@ struct laterales{
 	
 	bool existe(int y){
 		if(vacio()){
-			cout<<"no existe porque la lista esta vacia"<<endl;
+			cout<<"no existe porque la lista lateral esta vacia "<<endl;
 			return false;
 		}
 		else{
@@ -467,6 +463,7 @@ struct laterales{
 };
 
 
+//matriz ortogonal 
 typedef struct MatrizOrtogonal{
 	cabeceras* c;
 	laterales* l;
